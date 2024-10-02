@@ -1,0 +1,43 @@
+{
+  "extends": ["airbnb", "prettier", "plugin:node/recommended"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "spaced-comment": "off",
+    "no-console": "warn",
+    "consistent-return": "off",
+    "func-names": "off",
+    "object-shorthand": "off",
+    "no-process-exit": "off",
+    "no-param-reassign": "off",
+    "no-return-await": "off",
+    "no-underscore-dangle": "off",
+    "class-methods-use-this": "off",
+    "prefer-destructuring": ["error", { "object": true, "array": false }],
+    "no-unused-vars": ["error", { "argsIgnorePattern": "req|res|next|val" }]
+  }
+}
+// Extends:
+
+// airbnb: Provides a comprehensive set of rules for maintaining code quality and consistency.
+// prettier: Ensures that Prettier’s formatting rules are enforced.
+// plugin:node/recommended: Adds recommended rules for Node.js.
+// Plugins:
+
+// prettier: Ensures that Prettier formatting errors are shown as ESLint errors.
+// Rules:
+
+// prettier/prettier: Ensures code follows Prettier's formatting rules.
+// spaced-comment: Turning off enforcing spaces after comments.
+// no-console: Warnings for console.log usage (good for catching debugging code).
+// consistent-return: Turning off enforcing consistent returns in functions.
+// func-names: Turning off requiring named function expressions.
+// object-shorthand: Turning off enforcing the use of shorthand syntax.
+// no-process-exit: Turning off disallowing process.exit().
+// no-param-reassign: Turning off disallowing reassignment of function parameters.
+// no-return-await: Turning off disallowing unnecessary return await.
+// no-underscore-dangle: Turning off disallowing dangling underscores in identifiers.
+// class-methods-use-this: Turning off enforcing this in class methods.
+// prefer-destructuring: Enforcing destructuring for objects but not arrays.
+
+// no-unused-vars: Allowing certain arguments to be unused if they match req|res|next|val

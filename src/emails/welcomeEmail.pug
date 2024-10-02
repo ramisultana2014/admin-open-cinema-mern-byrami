@@ -1,0 +1,32 @@
+extends baseEmail
+//- alt and src expected string so we must write src=`/img/tours/${tour.imageCover}`
+block content
+ main
+  h1  online cinema Booking
+  .header
+   h2 booking information
+   p  reservation email   
+     strong= email
+   p  reservation number   
+    strong= ticketvervicationCode
+   p phoneNumber  
+    strong= phoneNumber
+  .header 
+   h2 booking details 
+    
+   each obj in cart
+    ul 
+     li movie title : 
+      span= obj.movieTitle 
+     li number of seats : 
+      span= obj.numberOfSeats
+      .seat your seats are
+       each seat in obj.seats
+        span= seat
+     li showtime at 
+      span= obj.dayShowTime
+ footer
+  h2 thanks for choosing our services
+  p If you have any questions, concerns, or require assistance, please do not hesitate to contact  Support
+  p rami.sultana@gmail.com
+  p 949574984
